@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 .body{
-    margin: 1%;
+    margin: 1rem;
 }
 
 body{
     border: 1px solid black;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* width: 100%; */
     /* padding: 15px; */
 }
@@ -28,9 +28,22 @@ body{
     width: 100%;
     height: 1px;
     margin-bottom: 10px;
-
+    animation: animate 1.5s ease-in-out;
+    animation-timeline: view();
 }
 
+@keyframes animate {
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        /* height: 1px; */
+        opacity: 1;
+    }
+}
 /* navbar ends here  */
 
 /* section 1 starts here  */
@@ -52,7 +65,7 @@ h1{
     font-family:  "Syne", serif;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     h1{
         font-size: 60px;
     }
@@ -61,7 +74,17 @@ h1{
     h1{
         font-size: 50px;
     }
+} */
+
+@media (max-width:991px){
+    .section1{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5%;
+        margin-bottom: 30px;
+    }
 }
+
 
 video{
     object-fit: cover;
@@ -99,7 +122,7 @@ video{
 .section2{
     padding: 3% 3%;
     display: grid;
-    grid-template-columns: auto auto 1fr ;
+    grid-template-columns: 12% auto 1fr ;
     gap: 4%;
     justify-content: end;
     /* place-items: center; */
@@ -114,10 +137,31 @@ video{
     /* gap: 2%; */
 }
 
-.heading2{
-    align-self: center;
+@media (max-width: 991px){
+    .s2group{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5%;
+        place-items: center;
+        row-gap: 50px;
+    }
+
+    .section2{
+        grid-template-columns: 20% auto 1fr !important;
+    }
+    .heading2{
+        align-self: start;
+        /* background-color: orange; */
+        /* position: relative;
+        top: 10px; */
+    }
+
 }
 
+@media (min-width: 992px){
+    .heading2{
+        align-self: center;
+    }
+}
 
 h2{
     /* padding-top: 25px; */
@@ -165,6 +209,45 @@ h3{
     gap: 4%;
 }
 
+.part3{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 5%;
+}
+
+
+@media (max-width:991px){
+    .part2 {
+        display: grid;
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .part3{
+        display: grid;
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    .line7{
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+}
+
+@media (min-width:992px){
+    .line7{
+        width: 1px;
+        height: 100%;
+        background-color: black;
+        
+    }
+}
+
 .brand{
     /* padding: 0 0px; */
     display: grid;
@@ -205,17 +288,12 @@ h3{
     grid-template-columns: 23% auto;
 }
 
-.part3{
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr;
-    gap: 5%;
-}
 
 .line7{
     /* margin-left: 30%; */
     background-color: black;
-    width: 1px;
-    height: 100%;
+    /* width: 1px;
+    height: 100%; */
     justify-self: center;
     align-self: stretch;
     /* content: ''; */
@@ -245,6 +323,25 @@ h3{
     grid-template-rows: auto;
     gap: 5%;
     position: relative;
+}
+
+.s4part2bottom{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+    gap: 4%;
+}
+
+@media (max-width: 991px){
+    .s4part2bottom{
+        display: grid;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: 1fr;
+        gap: 1%;
+    }
+    .hide1{
+        display: none;
+    }
 }
 
 .button5{
@@ -280,12 +377,6 @@ h3{
     gap: 20px;
 }
 
-.s4part2bottom{
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr;
-    grid-template-rows: auto;
-    gap: 4%;
-}
 
 h6{
     font-family:  "Syne", serif;
@@ -313,6 +404,39 @@ h5{
 .img16{
     margin-top: 25%;
 }
+
+@media (max-width: 991px){
+    .section5{
+        display:grid;
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+
+    .img16{
+        margin-top: 15%;
+    }
+
+    .button51{
+        margin-top: 10% !important;
+    }
+
+    .work{
+        font-size: 48px !important;
+    }
+
+    .our1{
+        margin-top: 25px;
+    }
+
+    .line4{
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+}
+
+
 
 /* section 5 ends here  */
 
@@ -387,6 +511,18 @@ h5{
     border-radius: 1rem;
 }
 
+@media (max-width: 991px){
+    .section7{
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: 1fr;
+    }
+    .img17{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* section 7 ends here  */
 
 /* section 8 starts here  */
@@ -403,14 +539,8 @@ h5{
     font-family: "syne" sans-serif;
 }
 
-.service2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .button2{
-    width: 40%;
+    /* width: 60%; */
     margin-top: 30px;
     border: none;
     border-radius: 5px;
@@ -420,6 +550,17 @@ h5{
     font-weight: 400;
 }
 
+@media(max-width:991px){
+    .section8{
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: 1fr;
+    }
+    .button52{
+        margin-top: 30px !important;
+        width: 20%;
+    }
+}
+
 /* section 8 ends here  */
 
 /* section 9 starts here  */
@@ -427,7 +568,7 @@ h5{
 .section9{
     padding: 2% 3%;
     display: grid;
-    grid-template-columns: 1fr 8%;
+    grid-template-columns: 1fr 12%;
     justify-content: space-between;
 }
 
@@ -468,6 +609,28 @@ h5{
 
 .para2{
     font-family: "Syne", sans-serif;
+}
+
+.line41{
+    /* margin-left: 30%; */
+    background-color: black;
+    width: 1px;
+    height: 100%;
+    justify-self: center;
+    align-self: stretch;
+    /* content: ''; */
+    /* border: 1px solid black; */
+}
+
+@media (max-width:991px){
+    .section10{
+        grid-template-columns: 1fr 1px 1fr;
+        grid-template-rows: auto;
+        gap: 3%;
+    }
+    .hide2{
+        display: none !important;
+    }
 }
 
 /* section 10 ends here  */
@@ -532,6 +695,17 @@ a{
     padding-top: 20px;
 }
 
+
+@media (max-width:991px){
+    .section11{
+        grid-template-rows: 1fr 1px 1fr;
+        grid-template-columns: auto;
+    }
+    .fright{
+        display: flex;
+        align-items: flex-start !important;
+    }
+}
 /* section 11 ends here  */
 
 /* section 12 starts here  */
