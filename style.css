@@ -8,6 +8,10 @@
     margin: 1rem;
 }
 
+body,html{
+    scroll-behavior: smooth;
+}
+
 body{
     border: 1px solid black;
     overflow-x: hidden;
@@ -28,8 +32,10 @@ body{
     width: 100%;
     height: 1px;
     margin-bottom: 10px;
-    animation: animate 1.5s ease-in-out ;
-    animation-timeline: view();
+    opacity: 0;
+    animation: animate 3s linear forwards;
+    animation-timeline: view(50% 10%);
+    /* animation-range: 300px 100px; */
 }
 
 @keyframes animate {
@@ -659,7 +665,7 @@ h5{
     .section8{
         grid-template-rows: 1fr 1px auto;
         grid-template-columns: 1fr;
-        margin-bottom: 60px;
+        margin-bottom: 60px; 
     }
 }
 
