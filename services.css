@@ -197,7 +197,8 @@ video{
 
 @media (max-width:480px){
     .s2h21{
-        font-size: 25px !important;
+        font-size: 40px !important;
+        margin-top: 10px;
     }
 }
 
@@ -316,6 +317,13 @@ video{
     }
 }
 
+@media (max-width:480px){
+    .s3h31{
+        font-size: 40px !important;
+        margin-top: 10px;
+    }
+}
+
 /* section 3 ends here  */
 
 /* section 4 starts here  */
@@ -430,6 +438,13 @@ video{
     }
 }
 
+@media (max-width:480px){
+    .s4h41{
+        font-size: 40px !important;
+        margin-top: 10px;
+    }
+}
+
 /* secction 4 ends here  */
 
 /* section 5 starts here  */
@@ -541,6 +556,13 @@ video{
 
     h2{
         font-size: 48px !important;
+    }
+}
+
+@media (max-width:480px){
+    .s5h51{
+        font-size: 40px !important;
+        margin-top: 10px;
     }
 }
 
