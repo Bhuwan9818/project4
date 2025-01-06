@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+::selection{
+    color: rgb(214, 198, 105);
+    background-color: rgb(70, 50, 27);
+}
+
 body{
     margin: 1rem;
     overflow-x: hidden;
@@ -754,3 +759,5 @@ a{
         align-items: center;
     }
 }
+
+/* footer ends here  */
