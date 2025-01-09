@@ -543,6 +543,16 @@ a{
     padding-top: 20px;
 }
 
+.nav2{
+    padding: 2% 3%;
+}
+
+.line2{
+    width: 1px;
+    height: 100%;
+    background-color: black;
+}
+
 
 @media (max-width:991px){
     .section11{
