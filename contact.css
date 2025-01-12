@@ -123,6 +123,30 @@ h1{
     background-color: black;
 }
 
+.textarea{
+    padding-bottom: 3rem;
+}
+
+@media (max-width:991px){
+    h1{
+        font-size: 64px;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width:768px){
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+}
+
 /* section 1 ends here  */
 
 /* section 2 starts here  */
@@ -135,20 +159,9 @@ h1{
     gap: 3rem;
 }
 
-h3{
-    font-size: 64px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-}
-
-.para2{
-    font-size: 22px;
-    font-weight: 400;
-}
-
 .img2{
     width: 100%;
-    height: 60%;
+    height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -157,7 +170,7 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .s3-left{
@@ -167,37 +180,64 @@ h3{
 }
 
 .jacob{
-    /* line-height: 2; */
-    display: flex;
-    /* flex-direction: row; */
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
 }
 
-.s3-right-content{
-    position: sticky;
-    top: 20px;
+.nav2{
+    padding: 0 2%;
 }
+
+.address{
+    font-weight: 600;
+}
+
+@media (max-width:1300px){
+    .section3{
+        display: grid;
+        /* grid-template-rows: auto 1px 1fr; */
+        grid-template-columns: 0.50fr 1px 1fr;
+        gap: 2rem;
+    }
+  }
 
 @media (max-width:991px){
     .s3-left-top{
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1px 1fr;
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .line21{
+        /* padding: 2% 3%; */
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+
+    .jacob{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto;
         gap: 1rem;
     }
 
-    .hide{
-        display: none;
+    .section3{
+        display: grid;
+        grid-template-columns: 0.2fr 1px 1fr;
+        gap: 2rem;
     }
 }
 
 @media (max-width:768px){
-    h3{
-        font-size: 48px;
-    }
-
-    
     .section3{
+        padding:2% 3%;
+        display: grid;
+        grid-template-rows: auto 1px 1fr;
+        grid-template-columns: 1fr;
         margin: 1rem 0px;
     }
 }
@@ -206,17 +246,95 @@ h3{
     .section3{
         padding: 2% 3%;
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1px 1fr;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
-    .hide1{
-        display: none;
+    .jacob{
+        display:grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
 /* section 2 ends here  */
+
+/* section 3 starts here  */
+  
+  .faq-container {
+    max-width: 600px;
+    margin: 0;
+  }
+  
+  .faq-item {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: start;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: "Syne", sans-serif;
+  }
+  
+  .toggle-icon {
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 18px;
+    color: #1d1c1c;
+    font-weight: 500;
+    transition: ease 1s;
+  }
+
+  .section31{
+    padding: 2% 3%;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  h5{
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "Syne",sans-serif;
+    line-height: 120%;
+  }
+
+  @media (max-width:991px){
+    h5{
+        font-size: 48px;
+    }
+  }
+
+  @media(max-width:768px){
+    .section31{
+        padding: 2% 3%;
+        display: grid;
+        grid-template-rows: auto 1px 1fr;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+  }
 
 /* footer starts here  */
 
